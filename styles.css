@@ -1,0 +1,80 @@
+body{
+    background-color: #faf0e6;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.introText{
+    font-size: 18px;
+    color: white;
+    display: flex;
+    margin-left: 30%;
+    margin-top: -30%;
+    width: 60%;
+}
+#box1 {
+    display: flex;
+    flex-direction: column;
+	background-color: #36454F;
+	font-size: 2.5vw;
+	color: white;
+	border-radius: 25px;
+    width: 50vw;
+    height: 30vw;
+    position:absolute;
+    top:25%;
+    left:25%;
+    transition: transform .2s;
+    z-index: 1;
+}
+
+.horizontal_dotted_line {
+  border-bottom: 4px dotted #36454F;
+  width: 20 px;
+}
+
+.circular--photo {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+.circular--photo img {
+    display: flex;
+    width: 150px;
+    height: auto%;
+    margin-left: 30px;
+    border-radius: 15%;
+}
+
+
+.typed {
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  margin-left: 70px;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing;
+  animation-duration: 1.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+  animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+
+@keyframes typing {
+  from { width: 0% }
+  to { width: 80% }
+}
+
+@keyframes blinking {
+  0% {border-right-color: transparent}
+  50% {border-right-color: black}
+  100% {border-right-color: transparent}
+}
+
+#box1:hover {
+  transform: scale(1.05);
+}
